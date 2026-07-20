@@ -1,0 +1,46 @@
+{
+	"name": "dev-burguer",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"dev": "tsx watch src/server.js",
+		"build": "prisma generate && tsc",
+		"db:push": "prisma db push",
+		"db:generate": "prisma generate",
+		"postinstall": "prisma generate",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@neondatabase/serverless": "^1.1.0",
+		"@prisma/adapter-neon": "^7.9.0",
+		"@prisma/client": "^7.9.0",
+		"bcrypt": "^6.0.0",
+		"cors": "^2.8.6",
+		"dotenv": "^17.4.2",
+		"express": "^5.2.1",
+		"jsonwebtoken": "^9.0.3",
+		"multer": "^2.0.2",
+		"pg": "^8.22.0",
+		"uuid": "^14.0.1",
+		"ws": "^8.21.1",
+		"zod": "^4.4.3"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.4.3",
+		"@types/bcrypt": "^6.0.0",
+		"@types/cors": "^2.8.19",
+		"@types/express": "^5.0.6",
+		"@types/jsonwebtoken": "^9.0.10",
+		"@types/multer": "^2.2.0",
+		"@types/node": "^26.1.1",
+		"@types/pg": "^8.20.0",
+		"prisma": "^7.9.0",
+		"tsx": "^4.23.1",
+		"typescript": "^7.0.2"
+	}
+}

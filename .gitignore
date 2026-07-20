@@ -1,0 +1,33 @@
+# Dependências do Node.js
+node_modules/
+
+# Arquivos de Build e Compilação
+dist/
+
+# Variáveis de ambiente e credenciais (NUNCA subir para o Git)
+.env
+.env.*
+!.env.example
+
+# Prisma Client Gerado (gerado dinamicamente no postinstall)
+src/generated/
+
+# Uploads locais de imagens (ignora as imagens enviadas pelos testes, mas mantém a pasta)
+uploads/*
+!uploads/.gitkeep
+
+# Arquivos de Configuração da Vercel / Deploy
+.vercel/
+
+# Logs de Execução
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Arquivos do Sistema Operacional e IDEs
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
