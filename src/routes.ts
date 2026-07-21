@@ -1,4 +1,5 @@
 import { Router } from 'express';
+import multer from 'multer';
 
 import CategoryController from './app/controllers/CategoryController.js';
 import OrderController from './app/controllers/OrderController.js';
@@ -6,7 +7,6 @@ import ProductController from './app/controllers/ProductController.js';
 import SessionController from './app/controllers/SessionController.js';
 import UserController from './app/controllers/UserController.js';
 
-import multer from 'multer';
 import adminMiddleware from './app/middlewares/admin.js';
 import authMiddleware from './app/middlewares/auth.js';
 import multerConfig from './config/multer.js';
